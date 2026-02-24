@@ -61,10 +61,11 @@ The site uses the Tailwind Plus "Studio" template (Next.js 16, Tailwind CSS v4, 
 - Blog infrastructure (MDX, loadArticles, wrapper) preserved for future use
 - Nav/footer blog links kept — page handles empty state gracefully
 
-### Task 5: Generate BV Favicon ⬜
-- Create favicon from the BV monogram (black square, white BV text)
-- Replace `src/app/favicon.ico` with new one
-- Also create `apple-icon.png` if the template supports it
+### Task 5: Generate BV Favicon ✅
+- Created `src/app/icon.tsx` — Next.js App Router ImageResponse, 32×32 dark square with white "BV" text
+- Created `src/app/apple-icon.tsx` — 180×180 version for Apple touch icon
+- Both use `#0a0a0a` background matching the site's `neutral-950` dark theme
+- Build generates `/icon` and `/apple-icon` routes automatically
 
 ### Task 6: Clean Up Team Images ⬜
 - Remove all fake team member photos from `src/images/team/` EXCEPT `kristian.jpg`
