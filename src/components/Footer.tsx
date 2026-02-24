@@ -9,9 +9,8 @@ const navigation = [
   {
     title: 'Work',
     links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
-      { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
+      { title: 'Homi', href: '/work/homi' },
+      { title: 'SwipeStats', href: '/work/swipestats' },
       {
         title: (
           <>
@@ -125,7 +124,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © Boe Ventures AS {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>

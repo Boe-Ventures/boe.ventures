@@ -28,7 +28,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            Current ventures
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -59,13 +59,13 @@ function CaseStudies({
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="Products that solve real problems"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          Every venture starts with a matching problem — connecting people with
+          homes, with data, with each other. We build products that make those
+          connections effortless.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -115,13 +115,13 @@ function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        eyebrow="Focus areas"
+        title="AI products, data platforms, and the tools people actually need."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          From home search to dating analytics to remote work — every product
+          tackles a coordination problem where technology can genuinely help.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -136,24 +136,25 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-132 lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="AI-powered products">
+              Building intelligent applications that understand context and
+              intent — from conversational home search to structured data
+              analysis. AI as a tool, not a gimmick.
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Data platforms">
+              Turning raw data into insights people actually use. Whether it's
+              dating patterns or housing markets, the goal is always clarity
+              from complexity.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="Full-stack development">
+              Modern web applications built with Next.js, TypeScript, and
+              whatever stack best fits the problem. Ship fast, iterate from
+              evidence.
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Growth & distribution">
+              Products that grow through genuine value — organic signups, 
+              community-driven distribution, and word of mouth over paid
+              acquisition.
             </ListItem>
           </List>
         </div>
@@ -164,7 +165,7 @@ function Services() {
 
 export const metadata: Metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'Boe Ventures is the product holding company of Kristian Elset Bøe, building AI-powered products that solve matching and coordination problems.',
 }
 
 export default async function Home() {
@@ -175,12 +176,13 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl">
-            Award-winning development studio based in Denmark.
+            Building products that connect people with what matters.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            Boe Ventures is the product studio of Kristian Elset Bøe. We build
+            AI-powered tools and data platforms that solve real matching
+            problems — from finding your next home to understanding your dating
+            life.
           </p>
         </FadeIn>
       </Container>
@@ -193,9 +195,9 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Homi', logo: logoHomiDark }}
       >
-        Building Homi was about creating a fundamentally better way to search for
-        homes. The AI doesn't just filter listings — it understands context,
-        preferences, and what makes a place feel like home.
+        The best products come from deeply understanding a problem before writing
+        a single line of code. Every venture I build starts with a real
+        frustration I've experienced firsthand.
       </Testimonial>
 
       <Services />
