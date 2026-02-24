@@ -49,10 +49,10 @@ export function Logo({
 }) {
   return (
     <div
-      className={clsx('flex items-center gap-x-2', className)}
+      className={clsx('flex items-center gap-x-2 whitespace-nowrap', className)}
       {...props}
     >
-      <Logomark className="h-8 w-8" invert={invert} />
+      <Logomark className="h-8 w-8 shrink-0" invert={invert} />
       <span
         className={clsx(
           'font-display text-xl font-semibold tracking-tight',
