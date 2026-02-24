@@ -29,14 +29,14 @@ The site uses the Tailwind Plus "Studio" template (Next.js 16, Tailwind CSS v4, 
 
 ## Tasks (Priority Order)
 
-### Task 1: Fix About Page ⬜
-- Rewrite `src/app/about/page.tsx` for Boe Ventures
-- Solo founder story, not "three friends started a studio"
-- Use Kristian's through-line: matching problems from thesis to Homi
-- Use `kristian.jpg` for the founder photo
-- Remove fake team members (Angela Fisher, Benjamin Russel, etc.)
-- Keep the page structure/components but rewrite all content
-- Remove or simplify the "Culture" / "Team" sections for a solo operation
+### Task 1: Fix About Page ✅
+- Rewrote `src/app/about/page.tsx` for Boe Ventures
+- Solo founder story with matching-problems through-line (thesis → Homi)
+- Uses `kristian.jpg` for the founder photo (only person shown)
+- Removed all 12 fake team members
+- Replaced "Culture" section with "Approach" (evidence over opinion, remote-first, compounding bets)
+- Stats updated: 3 products, 2 countries, ∞ matching problems
+- Blog section conditionally rendered (only shows if articles exist)
 
 ### Task 2: Fix Contact Page ⬜
 - Update `src/app/contact/page.tsx`
