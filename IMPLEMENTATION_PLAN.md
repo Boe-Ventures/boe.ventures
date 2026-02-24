@@ -38,11 +38,13 @@ The site uses the Tailwind Plus "Studio" template (Next.js 16, Tailwind CSS v4, 
 - Stats updated: 3 products, 2 countries, ∞ matching problems
 - Blog section conditionally rendered (only shows if articles exist)
 
-### Task 2: Fix Contact Page ⬜
-- Update `src/app/contact/page.tsx`
-- Replace `careers@studioagency.com` and `press@studioagency.com` with `kristian@boe.ventures`
-- Update any contact copy to be personal (not corporate)
-- Keep the form structure but make it feel right for a solo founder
+### Task 2: Fix Contact Page ✅
+- Updated `src/app/contact/page.tsx`
+- Replaced dummy agency emails with `kristian@boe.ventures`
+- Replaced budget radio inputs with a simple textarea ("What's on your mind?")
+- Removed "Company" and "Phone" fields — not relevant for a solo founder
+- Updated all copy: "Say hello", "Let's talk", "Where I work from", "Find me online"
+- Updated metadata description
 
 ### Task 3: Fix Process Page ⬜
 - Update `src/app/process/page.tsx`
