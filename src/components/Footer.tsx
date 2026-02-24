@@ -11,6 +11,7 @@ const navigation = [
     links: [
       { title: 'Homi', href: '/work/homi' },
       { title: 'SwipeStats', href: '/work/swipestats' },
+      { title: 'Promad', href: '/work/promad' },
       {
         title: (
           <>
@@ -22,12 +23,12 @@ const navigation = [
     ],
   },
   {
-    title: 'Company',
+    title: 'About',
     links: [
       { title: 'About', href: '/about' },
       { title: 'Process', href: '/process' },
       { title: 'Blog', href: '/blog' },
-      { title: 'Contact us', href: '/contact' },
+      { title: 'Contact', href: '/contact' },
     ],
   },
   {
@@ -77,35 +78,24 @@ function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function NewsletterForm() {
+function ContactCTA() {
   return (
-    <form className="max-w-sm">
+    <div className="max-w-sm">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-        Sign up for our newsletter
+        Say hello
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest design news, articles, resources and
-        inspiration.
+        Building something interesting? Have a question about one of the
+        products? Drop me a line.
       </p>
-      <div className="relative mt-6">
-        <input
-          type="email"
-          placeholder="Email address"
-          autoComplete="email"
-          aria-label="Email address"
-          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pr-20 pl-6 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
-        />
-        <div className="absolute inset-y-1 right-1 flex justify-end">
-          <button
-            type="submit"
-            aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
-          >
-            <ArrowIcon className="w-4" />
-          </button>
-        </div>
-      </div>
-    </form>
+      <Link
+        href="/contact"
+        className="mt-6 inline-flex items-center gap-x-2 text-sm font-semibold text-neutral-950 transition hover:text-neutral-700"
+      >
+        Get in touch
+        <ArrowIcon className="w-4" />
+      </Link>
+    </div>
   )
 }
 
@@ -116,7 +106,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           <Navigation />
           <div className="flex lg:justify-end">
-            <NewsletterForm />
+            <ContactCTA />
           </div>
         </div>
         <div className="mt-24 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">

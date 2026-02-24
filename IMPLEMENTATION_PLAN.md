@@ -87,10 +87,12 @@ The site uses the Tailwind Plus "Studio" template (Next.js 16, Tailwind CSS v4, 
 - Added `metadataBase: new URL('https://boe.ventures')` to root layout to resolve OG image URLs correctly (eliminates localhost warning)
 - All pages now have proper Boe Ventures metadata; /opengraph-image route generates at build time
 
-### Task 9: Fix Social Links ⬜
-- Add LinkedIn icon/link to SocialMedia component (linkedin.com/in/kristianeboe)
-- Add X/Twitter if Kristian has one
-- Remove Facebook and Dribbble (already partially done)
+### Task 9: Fix Social Links ✅
+- Replaced `SocialMedia.tsx` icons: removed Facebook, Instagram, Dribbble; added LinkedIn; kept GitHub
+- Updated `socialMediaProfiles`: LinkedIn (linkedin.com/in/kristianeboe) + GitHub (github.com/kristianeboe — corrected from Boe-Ventures)
+- Fixed Footer: renamed "Company" nav section to "About", "Contact us" → "Contact", added Promad to Work links
+- Replaced newsletter form with a "Say hello" ContactCTA (link to /contact) — appropriate for solo founder
+- Fixed mobile nav header "Follow us" → "Find me online"
 
 ### Task 10: Final Cleanup ⬜
 - Search entire `src/` for remaining "Studio" references and replace
