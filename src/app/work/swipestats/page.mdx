@@ -1,0 +1,67 @@
+import logo from '@/images/clients/swipestats/logo-dark.png'
+import imageHero from './hero.png'
+import imageKristian from './kristian.png'
+
+export const caseStudy = {
+  client: 'SwipeStats',
+  title: 'Turn your dating data into insights',
+  description:
+    'SwipeStats lets users upload their Tinder data anonymously and visualize comprehensive insights about their dating patterns, match rates, and conversation dynamics.',
+  summary: [
+    'SwipeStats is a dating data analytics platform that helps people understand their dating app behavior through data. Users upload their Tinder data anonymously and receive detailed visualizations and insights about their patterns, preferences, and performance.',
+    'Built with Next.js, TypeScript, and MongoDB, SwipeStats has achieved profitability, attracted enterprise interest, and built a thriving community on Reddit. The platform handles sensitive data with privacy-first architecture and delivers insights that help users make better decisions.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-03',
+  service: 'Data Analytics Platform',
+  testimonial: {
+    author: { name: 'Kristian Elset Bøe', role: 'Founder of SwipeStats' },
+    content:
+      'SwipeStats started as an experiment to see what stories our dating data could tell. It became a profitable business because people genuinely want to understand their dating patterns and improve their approach.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Dating apps generate massive amounts of data, but users rarely get meaningful insights from it. SwipeStats was built to change that — giving people a clear, honest view of their dating app behavior through comprehensive data analysis.
+
+Users can upload their Tinder data export anonymously and receive detailed visualizations covering match rates, conversation patterns, response times, peak activity periods, and more. The analytics reveal patterns most people don't notice: which photos perform best, when they're most active, how their swipe behavior compares to others, and where conversations tend to drop off.
+
+The platform launched with strong organic growth, driven by word-of-mouth and Reddit communities. As the user base grew, the business model proved itself: the product achieved profitability, attracted enterprise interest from dating app companies, and built an engaged community of users sharing insights.
+
+The tech stack — Next.js for the frontend, TypeScript for type safety, and MongoDB for flexible data storage — enabled rapid feature development while handling sensitive personal data with appropriate privacy safeguards. All data processing happens with anonymization, and users maintain full control over their information.
+
+Future development focuses on expanding to additional dating platforms beyond Tinder, deeper behavioral analytics, and enterprise features for dating app companies to better understand user behavior patterns.
+
+## What we did
+
+<TagList>
+  <TagListItem>Next.js</TagListItem>
+  <TagListItem>TypeScript</TagListItem>
+  <TagListItem>MongoDB</TagListItem>
+  <TagListItem>Data Visualization</TagListItem>
+  <TagListItem>Privacy Architecture</TagListItem>
+  <TagListItem>Community Growth</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Kristian Elset Bøe', role: 'Founder of SwipeStats' }}
+  image={{ src: imageKristian }}
+>
+  SwipeStats started as an experiment to see what stories our dating data could
+  tell. It became a profitable business because people genuinely want to
+  understand their dating patterns and improve their approach.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="10K+" label="Data uploads" />
+  <StatListItem value="$5K+" label="Monthly revenue" />
+  <StatListItem value="85%" label="User satisfaction" />
+  <StatListItem value="15K+" label="Reddit community" />
+</StatList>
