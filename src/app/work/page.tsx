@@ -11,6 +11,7 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
 import logoHomi from '@/images/clients/homi/logo-dark.svg'
+import logoPromad from '@/images/clients/promad/logo-dark.svg'
 import logoSwipeStats from '@/images/clients/swipestats/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
@@ -94,6 +95,7 @@ function CaseStudies({
 const clients = [
   ['Homi', logoHomi],
   ['SwipeStats', logoSwipeStats],
+  ['Promad', logoPromad],
 ]
 
 function Clients() {

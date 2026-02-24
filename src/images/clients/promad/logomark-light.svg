@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Compass circle -->
+  <circle cx="32" cy="28" r="18" stroke="#ffffff" stroke-width="3" fill="none"/>
+  <!-- Compass needle north (white) -->
+  <polygon points="32,14 28.5,28 35.5,28" fill="#ffffff"/>
+  <!-- Compass needle south (muted) -->
+  <polygon points="32,42 28.5,28 35.5,28" fill="#737373"/>
+  <!-- Center dot -->
+  <circle cx="32" cy="28" r="2.5" fill="#ffffff"/>
+  <!-- Text: PROMAD -->
+  <text x="32" y="57" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">PROMAD</text>
+</svg>

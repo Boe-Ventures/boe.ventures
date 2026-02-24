@@ -67,17 +67,19 @@ The site uses the Tailwind Plus "Studio" template (Next.js 16, Tailwind CSS v4, 
 - Both use `#0a0a0a` background matching the site's `neutral-950` dark theme
 - Build generates `/icon` and `/apple-icon` routes automatically
 
-### Task 6: Clean Up Team Images ⬜
-- Remove all fake team member photos from `src/images/team/` EXCEPT `kristian.jpg`
-- Update any references to removed images
+### Task 6: Clean Up Team Images ✅
+- Removed all 12 fake team member photos from `src/images/team/`
+- Only `kristian.jpg` remains; it's the only image referenced in the codebase (about page)
+- Build passes cleanly
 
-### Task 7: Add Promad.life Case Study ⬜
-- Create `src/app/work/promad/page.mdx` following existing format
+### Task 7: Add Promad.life Case Study ✅
+- Created `src/app/work/promad/page.mdx` following existing MDX format
 - Promad.life: curated content and community for professional nomads (digital nomads / remote workers)
-- Features: destinations, gear, software, community (Slack)
-- Use placeholder.svg for hero image
-- Create logomark SVG (simple icon for Promad)
-- Add to clients array on homepage and work page
+- Features: destinations, gear, software, community (Slack) — reflected in case study copy
+- Used `src/images/laptop.jpg` as placeholder hero image (copied to `src/app/work/promad/hero.jpg`)
+- Created compass-icon logomark SVGs in `src/images/clients/promad/` (all 4 variants: logomark-dark, logomark-light, logo-dark, logo-light)
+- Added Promad to clients arrays on both homepage (`page.tsx`) and work page (`work/page.tsx`)
+- Build passes cleanly, `/work/promad` renders as a static route
 
 ### Task 8: SEO & Meta Pass ⬜
 - Ensure all pages have proper metadata exports

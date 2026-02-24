@@ -1,0 +1,64 @@
+import logo from '@/images/clients/promad/logomark-dark.svg'
+import imageHero from './hero.jpg'
+import imageKristian from './kristian.png'
+
+export const caseStudy = {
+  client: 'Promad',
+  title: 'Curated community for professional nomads',
+  description:
+    'Promad.life is the destination for remote professionals who want more than just a laptop and a Wi-Fi connection — curated guides, gear, software, and a community of people doing it seriously.',
+  summary: [
+    'Promad is a content and community platform for professional nomads — remote workers and digital nomads who treat location freedom as a career asset, not just a lifestyle experiment.',
+    'The platform combines curated destination guides, gear and software recommendations, and a Slack community. Built with Next.js and a content-first architecture, Promad is designed to grow through genuine value rather than paid acquisition.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-01',
+  service: 'Community Platform',
+  testimonial: {
+    author: { name: 'Kristian Elset Bøe', role: 'Founder of Promad' },
+    content:
+      'The professional nomad space is full of influencer noise and generic advice. Promad exists to cut through that — real recommendations from people who actually live this way.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Remote work unlocked location freedom for millions of professionals, but the infrastructure for doing it well hasn't kept up. Most "digital nomad" content is written for travel bloggers, not engineers, product managers, or consultants building serious careers on the road.
+
+Promad was built to fill that gap. It's a curated platform for professional nomads — people who work remotely as a career choice, not just a gap year. The focus is on quality over quantity: the best destinations for specific working styles, the gear that actually holds up, the software stack that makes remote work sustainable.
+
+The community component matters as much as the content. Remote professionals have specific, niche needs that generic forums don't address — questions about tax residency, time zone overlap strategies, home base logistics, and how to maintain professional credibility while being geographically distributed. The Slack community brings those conversations together.
+
+The platform is intentionally lean: content-first, SEO-driven, and community-powered. Growth comes from being genuinely useful, not from ads or growth hacks.
+
+## What we did
+
+<TagList>
+  <TagListItem>Next.js</TagListItem>
+  <TagListItem>TypeScript</TagListItem>
+  <TagListItem>Content Architecture</TagListItem>
+  <TagListItem>Community Building</TagListItem>
+  <TagListItem>SEO Strategy</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Kristian Elset Bøe', role: 'Founder of Promad' }}
+  image={{ src: imageKristian }}
+>
+  The professional nomad space is full of influencer noise and generic advice.
+  Promad exists to cut through that — real recommendations from people who
+  actually live this way.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="2025" label="Launch year" />
+  <StatListItem value="3" label="Content pillars" />
+  <StatListItem value="1" label="Community (Slack)" />
+  <StatListItem value="∞" label="Countries to explore" />
+</StatList>
