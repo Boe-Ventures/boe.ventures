@@ -3,6 +3,7 @@ import { type Metadata } from 'next'
 import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://boe.ventures'),
   title: {
     template: '%s - Boe Ventures',
     default: 'Boe Ventures - Building products at the intersection of AI and everyday life',

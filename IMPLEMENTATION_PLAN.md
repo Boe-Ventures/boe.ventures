@@ -81,10 +81,11 @@ The site uses the Tailwind Plus "Studio" template (Next.js 16, Tailwind CSS v4, 
 - Added Promad to clients arrays on both homepage (`page.tsx`) and work page (`work/page.tsx`)
 - Build passes cleanly, `/work/promad` renders as a static route
 
-### Task 8: SEO & Meta Pass ⬜
-- Ensure all pages have proper metadata exports
-- Update descriptions to be Boe Ventures specific
-- Add og:image if possible (can use placeholder for now)
+### Task 8: SEO & Meta Pass ✅
+- Fixed Work page metadata: updated title to "Work", rewrote description, replaced template copy in PageIntro and Clients section heading
+- Created `src/app/opengraph-image.tsx` — Next.js ImageResponse OG image (1200×630) with dark background, BV logomark, headline, and tagline
+- Added `metadataBase: new URL('https://boe.ventures')` to root layout to resolve OG image URLs correctly (eliminates localhost warning)
+- All pages now have proper Boe Ventures metadata; /opengraph-image route generates at build time
 
 ### Task 9: Fix Social Links ⬜
 - Add LinkedIn icon/link to SocialMedia component (linkedin.com/in/kristianeboe)
