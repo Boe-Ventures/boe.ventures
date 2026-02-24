@@ -1,10 +1,6 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Blue squircle background -->
-  <rect width="32" height="32" rx="8" fill="#3B82F6"/>
-  
-  <!-- Lucide house icon in white -->
-  <g transform="translate(4, 4) scale(1)">
-    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-</svg> 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32" fill="none">
+  <rect width="28" height="28" x="0" y="2" rx="6" fill="#2563eb"/>
+  <path d="M8 17.5l6-5 6 5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M10 16v6h8v-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="36" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#171717">Homi</text>
+</svg>
