@@ -46,12 +46,13 @@ The site uses the Tailwind Plus "Studio" template (Next.js 16, Tailwind CSS v4, 
 - Updated all copy: "Say hello", "Let's talk", "Where I work from", "Find me online"
 - Updated metadata description
 
-### Task 3: Fix Process Page ⬜
-- Update `src/app/process/page.tsx`
-- Replace generic agency process with Kristian's actual approach
-- Discover → Research → Build → Iterate
-- Reference real methodology: evidence-driven, ship fast, iterate
-- Remove "Studio" references and fake testimonials
+### Task 3: Fix Process Page ✅
+- Updated `src/app/process/page.tsx`
+- Replaced all sarcastic template content with Kristian's actual approach
+- Sections: Discover → Build → Iterate (renamed "Deliver" to "Iterate")
+- Removed fake testimonial (Debra Fiscal / Unseal)
+- Replaced "Values" section with "Principles" — evidence over opinion, small surface area, compounding bets, remote by default, ship then polish, own the problem
+- Updated metadata: "How I Work" title and Boe Ventures description
 
 ### Task 4: Remove Dummy Blog Posts ⬜
 - Delete the 3 template blog posts in `src/app/blog/`
