@@ -54,10 +54,12 @@ The site uses the Tailwind Plus "Studio" template (Next.js 16, Tailwind CSS v4, 
 - Replaced "Values" section with "Principles" — evidence over opinion, small surface area, compounding bets, remote by default, ship then polish, own the problem
 - Updated metadata: "How I Work" title and Boe Ventures description
 
-### Task 4: Remove Dummy Blog Posts ⬜
-- Delete the 3 template blog posts in `src/app/blog/`
-- Either: leave blog empty with a "Coming soon" message, or remove the blog link from nav/footer
-- Keep the blog infrastructure (MDX setup) for future use
+### Task 4: Remove Dummy Blog Posts ✅
+- Deleted the 3 template blog post directories from `src/app/blog/`
+- Updated blog page with Boe Ventures copy ("Writing", "Notes from the build")
+- Empty state shows "Writing coming soon" with LinkedIn link
+- Blog infrastructure (MDX, loadArticles, wrapper) preserved for future use
+- Nav/footer blog links kept — page handles empty state gracefully
 
 ### Task 5: Generate BV Favicon ⬜
 - Create favicon from the BV monogram (black square, white BV text)
