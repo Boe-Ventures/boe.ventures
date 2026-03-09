@@ -14,6 +14,7 @@ import logoHomiLight from '@/images/clients/homi/logo-light.svg'
 import logoPromadLight from '@/images/clients/promad/logo-light.svg'
 import logoSwipeStatsDark from '@/images/clients/swipestats/logo-dark.svg'
 import logoSwipeStatsLight from '@/images/clients/swipestats/logo-light.svg'
+import logoTowersLight from '@/images/clients/towers/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
@@ -22,6 +23,7 @@ const clients = [
   ['Homi', logoHomiLight],
   ['SwipeStats', logoSwipeStatsLight],
   ['Promad', logoPromadLight],
+  ['Towers Club', logoTowersLight],
 ]
 
 function Clients() {
