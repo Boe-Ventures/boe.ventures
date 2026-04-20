@@ -138,10 +138,7 @@ export default async function Work() {
 
   return (
     <RootLayout>
-      <PageIntro
-        eyebrow="Portfolio"
-        title="Products that solve real problems."
-      >
+      <PageIntro eyebrow="Portfolio" title="Products that solve real problems.">
         <p>
           Each product in the Boe Ventures portfolio started as a question worth
           answering. They share a common thread: matching people to the right
@@ -155,9 +152,9 @@ export default async function Work() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'SwipeStats', logo: logoSwipeStats }}
       >
-        SwipeStats started as an experiment to see what stories our dating data could
-        tell. It became a profitable business because people genuinely want to
-        understand their dating patterns and improve their approach.
+        SwipeStats started as an experiment to see what stories dating data
+        could tell. It became a profitable business because people genuinely
+        want to understand their dating patterns and improve their approach.
       </Testimonial>
 
       <Clients />

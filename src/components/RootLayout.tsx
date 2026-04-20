@@ -82,7 +82,7 @@ function Header({
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={invert}>
-            Contact us
+            Contact
           </Button>
           <button
             ref={toggleRef}
@@ -239,7 +239,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                 <div className="grid grid-cols-1 gap-y-10 pt-10 pb-16 sm:grid-cols-2 sm:pt-16">
                   <div>
                     <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
+                      Where I work from
                     </h2>
                     <Offices
                       invert
