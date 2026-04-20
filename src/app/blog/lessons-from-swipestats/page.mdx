@@ -1,0 +1,48 @@
+import kristianImage from '@/images/team/kristian.jpg'
+
+export const article = {
+  date: '2026-03-08',
+  title: 'What SwipeStats Taught Me About Personal Data',
+  description:
+    'A million swipes told me something I wasn’t expecting: people don’t want market statistics. They want a mirror.',
+  author: {
+    name: 'Kristian Elset Bø',
+    role: 'Founder',
+    image: { src: kristianImage },
+  },
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+SwipeStats started as a curiosity project. Dating apps hand over your full activity history if you request it under GDPR — every swipe, every match, every message, with timestamps. It seemed like a shame for that data to live in a JSON file nobody would ever read.
+
+The first version was a visualization: upload your Tinder export, get a dashboard showing your match rate over time, time-of-day patterns, geographic spread, conversation length distributions. I shipped it, thousands of people uploaded, and I learned something I didn’t expect.
+
+## Market vs. mirror
+
+My initial pitch — what I thought would be interesting — was cross-user aggregates. How does your match rate compare to the average? What does the typical user’s swipe-to-reply ratio look like? How does that shift by age or city? _Market statistics._
+
+That’s not what people came for.
+
+![](./jars.jpg)
+
+What people came for was the mirror. _What do my own patterns look like?_ They scrolled past the aggregate charts and spent most of their session on the pages that showed their own behavior over time. The insight they were after was self-reflective, not comparative.
+
+That reframing is the single most useful thing SwipeStats taught me, and it shapes everything I build now.
+
+## The lesson, generalized
+
+A lot of data products aim for comprehensiveness — _we have the most listings, the biggest dataset, the most accurate market index_ — and assume users will find that compelling. Sometimes they do. More often, users engage with the slice of data that’s about _them_.
+
+Market statistics are a one-time read. You skim the headline number, feel briefly validated or demoralized, and move on. Personal data is a recurring ritual. You come back to it because the story is still being written.
+
+This is why Homi’s home-comparison views lean hard on _"how does this listing fit **your** story"_ instead of _"how does this listing stack up against the market."_ The market view has a place, but it’s the opening act, not the main event.
+
+## What I’d do differently
+
+If I were starting SwipeStats today, I’d have led with the personal dashboard and buried the market-aggregate charts three clicks deep — not because they aren’t interesting, but because they’re not what brings people back. Data products earn retention by becoming part of how users understand themselves, not by being a well-indexed encyclopedia.
+
+The best data product is one your user checks without being prompted. That only happens when the data is about them.

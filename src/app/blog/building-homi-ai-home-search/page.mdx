@@ -1,0 +1,48 @@
+import kristianImage from '@/images/team/kristian.jpg'
+
+export const article = {
+  date: '2026-04-15',
+  title: 'Building Homi: Why Home Search Needs an AI That Listens',
+  description:
+    'Most home search is a filter problem. But how you actually decide on a home is a story problem. Here’s what we built to close that gap.',
+  author: {
+    name: 'Kristian Elset Bø',
+    role: 'Founder',
+    image: { src: kristianImage },
+  },
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+Every home search tool I’ve ever used starts the same way: pick a city, set a price range, tick some boxes for bedrooms and bathrooms, and stare at a grid of listings sorted by some opaque relevance score. The filters give you control over the things that matter least and nothing over the things that matter most.
+
+The thing that actually decides whether a home is right for you is a story. _"Young family with twins, need outdoor space, WFH office matters more than a big kitchen, partner commutes to Midtown, burned by noisy neighbors so top floor preferred."_ That single paragraph contains more signal than any combination of filter boxes ever will.
+
+## The story is the product
+
+The core primitive in Homi is what we call the _story_ — a plaintext narrative generated from a short voice or chat interview with the searcher. It captures who they are, what they’re hoping to achieve, and what actually matters to them emotionally. Not criteria. Context.
+
+Every AI action in the system reads from that story. When an agent reviews a listing, it scores against the story, not against generic quality. When the browser scout goes looking for listings on Finn or Hemnet or Rightmove, it reads the story to decide what to look for. When a partner adds a note to the collection, the note gets folded back into the story.
+
+![](./laptop.jpg)
+
+## What surprised us
+
+Three things we didn’t expect:
+
+1. **People write longer stories than we asked for.** The average first-session story is about twice as long as our prompts suggest. Once someone starts describing what they actually want from a home, it turns out they have a lot to say, and no one has ever really asked.
+2. **Multi-person collections are messy in interesting ways.** Two people looking together almost always have stories that partially contradict each other. Surfacing those contradictions — gently — has become one of the more valuable things the product does.
+3. **The story evolves.** Thumbs-ups, thumbs-downs, and stage movements (incoming → qualified → will-view) update the story over time. By the time someone is ready to make an offer, their story barely resembles the one they started with. That’s not a bug. That’s the search working.
+
+## The stack
+
+Nothing exotic. Next.js for the web app, Drizzle + Neon for the database, tRPC for the API, Better Auth for accounts, Vercel Blob for images. The AI layer uses the Vercel AI SDK with a gateway in front so we can swap between Claude and Gemini depending on the task. Stagehand drives the browser agent that scouts listings on portals we haven’t built direct integrations for.
+
+## Where it’s going
+
+We’re a few hundred signups in, with broker pilots running in Oslo and a handful of international users testing short-stay mode. The next wave is saved searches — stories that keep scouting in the background and ping you when something new matches. The one after that is a chrome extension that lets you forward any listing to Homi from any site with a keystroke.
+
+If any of this sounds useful for your own search, [homi.so](https://homi.so) is live.

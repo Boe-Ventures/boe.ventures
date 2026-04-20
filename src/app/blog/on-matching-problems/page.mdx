@@ -1,0 +1,48 @@
+import kristianImage from '@/images/team/kristian.jpg'
+
+export const article = {
+  date: '2026-02-12',
+  title: 'The Thread Through My Work Is Matching Problems',
+  description:
+    'Apartments to roommates to dating to homes to nomad communities — they’re the same problem wearing different clothes.',
+  author: {
+    name: 'Kristian Elset Bø',
+    role: 'Founder',
+    image: { src: kristianImage },
+  },
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+I didn’t notice the pattern until I was years in.
+
+My MSc thesis at NTNU was on apartment matching — how do you pair students with shared flats in a way that produces roommates who actually like each other, rather than the usual random assignment lottery. At the time I thought I’d picked the topic because I found the optimization math interesting.
+
+Then I joined Netlight, and later Schibsted, and later still did a stint at Antler working on Scales — a product that matched professionals to workplaces based on something deeper than job title overlap. Different domain, same shape.
+
+![](./magnifying-glass.jpg)
+
+## The pattern
+
+SwipeStats, which came next, was ostensibly a dating-data visualization tool. But what made it interesting was what it revealed about how matching actually works: the signals people think matter and the signals that actually predict outcomes are often wildly different.
+
+Homi is the most recent. AI-powered home search. On the surface it’s "Zillow but smarter." Underneath, it’s the same problem I’ve been working on for a decade: taking someone’s real context and finding the right thing for them in a sea of options with bad signal-to-noise.
+
+Even Promad — the professional-nomad community I’m launching next — is a matching problem. Matching remote workers with cities that actually fit their lifestyle. Matching them with each other for co-working or co-living. Matching them with tools and routines that work for someone who lives this way.
+
+## What they share
+
+Every matching problem I’ve worked on has the same three properties:
+
+1. **High stakes, low frequency.** You don’t choose a home every week. You don’t move roommates every month. You don’t change jobs every year. Each decision is expensive to make and hard to reverse, which means people should invest in getting them right. They usually don’t, because:
+2. **Bad signal-to-noise in the existing tools.** The data that matters most is personal and qualitative. The data that exists in most systems is generic and quantitative. Price. Square footage. Age. Location. That list never captures the thing that actually makes a home feel like home, or a roommate feel livable, or a job feel like it fits.
+3. **Coordination cost.** Most matching isn’t one-sided. Partners search together. Roommates have to agree. Employers and employees both have preferences. A good matching product makes the coordination easier, not harder.
+
+## Why the portfolio approach works
+
+Every venture I build teaches me something that makes the next one sharper. The apartment-matching thesis taught me graph theory was a red herring — actual human matching is messier than the math. Scales taught me how to extract the real preferences from people who are bad at articulating them. SwipeStats taught me that personal data beats market data for engagement. Homi is applying all of it to one of the most expensive decisions in anyone’s life.
+
+If the next thing I build ten years from now is still some version of a matching problem, I’ll take that as a sign I picked the right thread.
