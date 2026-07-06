@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 32" fill="none">
+  <!-- Aperture Ring lockup, mirrored from towers.club/src/components/site/Logo.tsx -->
+  <rect width="28" height="28" x="0" y="2" rx="6" fill="#3B82F6"/>
+  <g transform="translate(4.2, 6.2) scale(0.196)">
+    <circle cx="50" cy="50" r="34" fill="none" stroke="white" stroke-width="6"/>
+    <path d="M50 30 L60 40 L60 70 L40 70 L40 40 Z" fill="white"/>
+  </g>
+  <text x="36" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#171717">towers.club</text>
+</svg>

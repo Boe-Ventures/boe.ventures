@@ -25,8 +25,8 @@ export default async function Blog() {
     <RootLayout>
       <PageIntro eyebrow="Writing" title="Notes from the build">
         <p>
-          Occasional posts on products, patterns, and the journey of building
-          multiple ventures as a solo founder.
+          Occasional writing on matching problems, building solo, and whatever
+          the data is currently teaching me.
         </p>
       </PageIntro>
 

@@ -3,7 +3,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { GridPattern } from '@/components/GridPattern'
+import { TiltedCards } from '@/components/TiltedCards'
 
 export function Testimonial({
   children,
@@ -17,14 +17,17 @@ export function Testimonial({
   return (
     <div
       className={clsx(
-        'relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32',
+        'relative isolate bg-linear-to-b from-paper to-paper-deep py-16 sm:py-28 md:py-32',
         className,
       )}
     >
-      <GridPattern
-        className="absolute inset-0 -z-10 h-full w-full mask-[linear-gradient(to_bottom_left,white_50%,transparent_60%)] fill-neutral-100 stroke-neutral-950/5"
-        yOffset={-256}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_40%_70%_at_85%_50%,rgba(246,217,184,0.3),transparent_60%)]"
       />
+      <div className="absolute inset-y-0 right-0 -z-10 w-1/2">
+        <TiltedCards tone="light" />
+      </div>
       <Container>
         <FadeIn>
           <figure className="mx-auto max-w-4xl">

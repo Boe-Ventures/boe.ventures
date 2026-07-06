@@ -29,6 +29,9 @@
 
   --radius-4xl: 2.5rem;
 
+  --color-paper: #faf8f3;
+  --color-paper-deep: #f2eee6;
+
   --font-sans:
     Mona Sans, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';

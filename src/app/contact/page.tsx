@@ -20,8 +20,8 @@ export default function Contact() {
     <RootLayout>
       <PageIntro eyebrow="Contact" title="Let's talk">
         <p>
-          Have an idea you want to explore, or just want to connect? I read
-          every email.
+          About one of the products, a collaboration, or a matching problem you
+          think I&apos;d appreciate — I read every email.
         </p>
       </PageIntro>
 

@@ -1,6 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32" fill="none">
-  <rect width="28" height="28" x="0" y="2" rx="6" fill="#2563eb"/>
-  <path d="M8 17.5l6-5 6 5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M10 16v6h8v-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Current Homi mark (28px lockup size), mirrored from homi/packages/ui/src/components/homi-logo.tsx -->
+  <g transform="translate(0, 2) scale(0.875)">
+    <rect width="32" height="32" rx="8" fill="#2C7FFF"/>
+    <path d="M8 15.6427V23.7716C8 24.3239 8.44772 24.7716 9 24.7716H12.5C13.0523 24.7716 13.5 24.3239 13.5 23.7716V19.7716C13.5 18.3909 14.6193 17.2716 16 17.2716C17.3807 17.2716 18.5 18.3909 18.5 19.7716V23.7716C18.5 24.3239 18.9477 24.7716 19.5 24.7716H23C23.5523 24.7716 24 24.3239 24 23.7716V15.6427C24 15.3875 23.9024 15.1419 23.7271 14.9563L16.3636 7.15675C16.1662 6.94775 15.8338 6.94775 15.6364 7.15675L8.27286 14.9563C8.09762 15.1419 8 15.3875 8 15.6427Z" stroke="#EFF6FF" stroke-width="1.7"/>
+  </g>
   <text x="36" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#171717">Homi</text>
 </svg>

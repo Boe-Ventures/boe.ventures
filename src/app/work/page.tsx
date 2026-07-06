@@ -13,6 +13,7 @@ import { Testimonial } from '@/components/Testimonial'
 import logoHomi from '@/images/clients/homi/logo-dark.svg'
 import logoPromad from '@/images/clients/promad/logo-dark.svg'
 import logoSwipeStats from '@/images/clients/swipestats/logo-dark.svg'
+import logoTowers from '@/images/clients/towers/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
@@ -96,6 +97,7 @@ const clients = [
   ['Homi', logoHomi],
   ['SwipeStats', logoSwipeStats],
   ['Promad', logoPromad],
+  ['Towers Club', logoTowers],
 ]
 
 function Clients() {
@@ -138,11 +140,12 @@ export default async function Work() {
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="Portfolio" title="Products that solve real problems.">
+      <PageIntro eyebrow="Portfolio" title="Products shipped and maintained">
         <p>
-          Each product in the Boe Ventures portfolio started as a question worth
-          answering. They share a common thread: matching people to the right
-          place, the right data, or the right community.
+          Every one of these started as a personal itch: I couldn&apos;t find
+          an apartment, I wondered what my Tinder data actually said, I kept
+          photographing residential towers. The case studies tell it straight —
+          numbers included.
         </p>
       </PageIntro>
 
@@ -152,9 +155,10 @@ export default async function Work() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'SwipeStats', logo: logoSwipeStats }}
       >
-        SwipeStats started as an experiment to see what stories dating data
-        could tell. It became a profitable business because people genuinely
-        want to understand their dating patterns and improve their approach.
+        SwipeStats was supposed to be a side experiment. It became a profitable
+        business, because the signals people think matter in dating and the
+        signals that actually predict outcomes are wildly different — and
+        people will pay to see the difference in their own data.
       </Testimonial>
 
       <Clients />

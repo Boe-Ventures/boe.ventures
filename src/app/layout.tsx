@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://boe.ventures'),
   title: {
     template: '%s - Boe Ventures',
-    default: 'Boe Ventures - Building products at the intersection of AI and everyday life',
+    default: 'Boe Ventures - Software for high-stakes, low-frequency decisions',
   },
 }
 

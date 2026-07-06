@@ -1,14 +1,15 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
 
 import { Border } from '@/components/Border'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
+import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
 import { PageIntro } from '@/components/PageIntro'
 import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
+import { SocialMedia } from '@/components/SocialMedia'
 import { StatList, StatListItem } from '@/components/StatList'
 import imageKristian from '@/images/team/kristian.jpg'
 import { loadArticles } from '@/lib/mdx'
@@ -53,35 +54,39 @@ function Founder() {
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeInStagger>
         <Border as={FadeIn} />
-        <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
+        <div className="grid grid-cols-1 items-center gap-x-12 gap-y-12 pt-12 sm:pt-16 lg:grid-cols-2">
+          <FadeIn className="relative">
+            <div
+              aria-hidden="true"
+              className="absolute -inset-x-6 -inset-y-10 -z-10 rounded-[3rem] blur-3xl"
+              style={{
+                background:
+                  'radial-gradient(ellipse 70% 60% at 25% 15%, rgba(233,168,124,0.35) 0%, transparent 65%)',
+              }}
+            />
+            <div className="overflow-hidden rounded-4xl bg-neutral-100 shadow-[0_30px_70px_rgba(15,15,16,0.15)]">
+              <GrayscaleTransitionImage
+                src={imageKristian}
+                alt="Kristian Elset Bøe"
+                className="h-[26rem] w-full object-cover sm:h-[30rem]"
+              />
+            </div>
+          </FadeIn>
+
           <FadeIn>
-            <h2 className="font-display text-2xl font-semibold text-neutral-950">
+            <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
               Founder
             </h2>
+            <p className="mt-6 font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+              Kristian Elset Bøe
+            </p>
+            <p className="mt-6 max-w-lg text-xl text-neutral-600">
+              &ldquo;Everything I build is still some version of the same
+              problem — finding the right thing in a sea of options with bad
+              signal.&rdquo;
+            </p>
+            <SocialMedia className="mt-8" />
           </FadeIn>
-          <div className="lg:col-span-3">
-            <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
-              <li>
-                <FadeIn>
-                  <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
-                    <Image
-                      alt="Kristian Elset Bøe"
-                      src={imageKristian}
-                      className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black to-black/0 to-40% p-6">
-                      <p className="font-display text-base/6 font-semibold tracking-wide text-white">
-                        Kristian Elset Bøe
-                      </p>
-                      <p className="mt-2 text-sm text-white">
-                        Founder
-                      </p>
-                    </div>
-                  </div>
-                </FadeIn>
-              </li>
-            </ul>
-          </div>
         </div>
       </FadeInStagger>
     </Container>
@@ -99,7 +104,7 @@ export default async function About() {
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="About" title="One engineer, a few bets, a clear thread">
+      <PageIntro eyebrow="About" title="One-person product studio">
         <p>
           Boe Ventures is my holding company. I'm Kristian — Norwegian engineer,
           Oslo and NYC, MSc in AI from NTNU. I build software products and run them.
@@ -141,7 +146,7 @@ export default async function About() {
         <PageLinks
           className="mt-24 sm:mt-32 lg:mt-40"
           title="From the blog"
-          intro="Occasional writing on products, AI, and what I'm learning building in public."
+          intro="Occasional writing on matching problems and what building these products keeps teaching me."
           pages={blogArticles}
         />
       )}
