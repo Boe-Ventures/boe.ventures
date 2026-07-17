@@ -10,9 +10,6 @@ import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { TagList, TagListItem } from '@/components/TagList'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
 import { RootLayout } from '@/components/RootLayout'
 
 function Section({
@@ -55,7 +52,13 @@ function Section({
 
 function Discover() {
   return (
-    <Section title="Discover" image={{ src: imageWhiteboard }}>
+    <Section
+      title="Discover"
+      image={{
+        src: '/images/archive/product-development-spaceship-car.png',
+        grayscale: false,
+      }}
+    >
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Every product starts with a problem worth solving. I spend time
@@ -75,9 +78,11 @@ function Discover() {
           data but had no way to make sense of it.
         </p>
         <p>
-          The goal of this phase is to get to a sharp problem statement and a
-          clear hypothesis. Not a business plan — a{' '}
+          The goal is to turn the vision into testable assumptions: a sharp
+          problem statement and a clear hypothesis. Not a business plan — a{' '}
           <strong className="font-semibold text-neutral-950">bet</strong>.
+          Product development should feel more like driving a car and making
+          small corrections than launching a spaceship on a fixed trajectory.
         </p>
       </div>
 
@@ -98,28 +103,40 @@ function Discover() {
 
 function Build() {
   return (
-    <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
+    <Section
+      title="Build"
+      image={{
+        src: '/images/archive/mvp-learning-instrument.png',
+        shape: 1,
+        grayscale: false,
+      }}
+    >
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           I build with a small surface area:{' '}
           <strong className="font-semibold text-neutral-950">
             Next.js, TypeScript, tRPC, Postgres
           </strong>
-          . Same stack across every product. This isn&apos;t laziness — it&apos;s leverage.
-          Familiarity lets me ship fast without accumulating hidden complexity.
+          . Same stack across every product. This isn&apos;t laziness —
+          it&apos;s leverage. Familiarity lets me ship fast without accumulating
+          hidden complexity.
         </p>
         <p>
-          The first version of anything is a working{' '}
-          <strong className="font-semibold text-neutral-950">prototype</strong>,
-          not a production system. I&apos;d rather have ten real users using
-          something rough than spend three months polishing something nobody
-          needs.
+          The first version is a working{' '}
+          <strong className="font-semibold text-neutral-950">
+            learning instrument
+          </strong>
+          , not a smaller list of features or a bad version of the final
+          product. I&apos;d rather have ten real users teach me something than
+          spend three months polishing something nobody needs.
         </p>
         <p>
-          AI is now a first-class collaborator in every build. I use it for
-          code generation, UX copy, data processing, and feature brainstorming
-          — not as a shortcut, but as a{' '}
-          <strong className="font-semibold text-neutral-950">force multiplier</strong>{' '}
+          AI is now a first-class collaborator in every build. I use it for code
+          generation, UX copy, data processing, and feature brainstorming — not
+          as a shortcut, but as a{' '}
+          <strong className="font-semibold text-neutral-950">
+            force multiplier
+          </strong>{' '}
           for a single founder moving at speed.
         </p>
       </div>
@@ -141,7 +158,14 @@ function Build() {
 
 function Iterate() {
   return (
-    <Section title="Iterate" image={{ src: imageMeeting, shape: 2 }}>
+    <Section
+      title="Iterate"
+      image={{
+        src: '/images/archive/baseline-tune-pivot.png',
+        shape: 2,
+        grayscale: false,
+      }}
+    >
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Launching is the beginning, not the end. After an initial release I
@@ -151,17 +175,16 @@ function Iterate() {
           Opinions are cheap.
         </p>
         <p>
-          Each iteration is a small bet: a specific change with a clear
-          expected outcome. If it works, double down. If it doesn&apos;t,
-          cut it and move on. The compounding effect of many small
-          improvements beats one perfect release every time.
+          First establish a baseline. Then tune the engine through small bets: a
+          specific change with a clear expected outcome. If it works, double
+          down. If it doesn&apos;t, cut it and move on.
         </p>
         <p>
           Iteration also applies to the portfolio itself. I&apos;m not attached
-          to any particular product — I&apos;m attached to building things
-          that matter. If the evidence says{' '}
-          <strong className="font-semibold text-neutral-950">pivot</strong>,
-          I pivot.
+          to any particular product — I&apos;m attached to building things that
+          matter. If the evidence says{' '}
+          <strong className="font-semibold text-neutral-950">pivot</strong>, I
+          pivot.
         </p>
       </div>
 
@@ -196,10 +219,7 @@ function Values() {
         />
       </div>
 
-      <SectionIntro
-        eyebrow="Principles"
-        title="What I actually believe"
-      >
+      <SectionIntro eyebrow="Principles" title="What I actually believe">
         <p>
           Not values from a brand exercise. Things I&apos;ve learned from
           building products, making bets that didn&apos;t pan out, and
@@ -210,23 +230,24 @@ function Values() {
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Evidence over opinion">
-            The right answer is usually in the data, not in the meeting room.
-            I try to form hypotheses and test them rather than argue about
-            what users want.
+            The right answer is usually in the data, not in the meeting room. I
+            try to form hypotheses and test them rather than argue about what
+            users want.
           </GridListItem>
           <GridListItem title="Small surface area">
             Fewer abstractions, fewer dependencies, fewer moving parts. Every
-            layer of complexity is technical debt you&apos;re paying interest on.
+            layer of complexity is technical debt you&apos;re paying interest
+            on.
           </GridListItem>
           <GridListItem title="Compounding bets">
             The products I build share underlying infrastructure and insights.
-            Work done on one informs the others. That&apos;s not accident — it&apos;s
-            strategy.
+            Work done on one informs the others. That&apos;s not accident —
+            it&apos;s strategy.
           </GridListItem>
           <GridListItem title="Remote by default">
-            I&apos;ve worked from Oslo, New York, and places in between. The best
-            way to stay sharp is to stay curious — and that requires freedom
-            of location.
+            I&apos;ve worked from Oslo, New York, and places in between. The
+            best way to stay sharp is to stay curious — and that requires
+            freedom of location.
           </GridListItem>
           <GridListItem title="Ship, then polish">
             Perfect is the enemy of shipped. A rough product in front of real
@@ -255,8 +276,9 @@ export default function Process() {
       <PageIntro eyebrow="How I work" title="Discover, build, iterate">
         <p>
           No 12-week discovery phases. No committee-approved roadmaps. I move
-          fast, stay close to users, and let evidence drive decisions. Here&apos;s
-          what that looks like in practice.
+          fast, stay close to users, and let evidence drive decisions. It&apos;s
+          the same core loop I taught in Lean Startup talks in 2016–2018,
+          updated for how I build today.
         </p>
       </PageIntro>
 
