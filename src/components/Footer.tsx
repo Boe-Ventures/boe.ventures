@@ -11,6 +11,7 @@ const navigation = [
     links: [
       { title: 'Homi', href: '/work/homi' },
       { title: 'SwipeStats', href: '/work/swipestats' },
+      { title: 'Draupnir', href: '/work/draupnir' },
       { title: 'Promad', href: '/work/promad' },
       { title: 'Towers Club', href: '/work/towers' },
       {

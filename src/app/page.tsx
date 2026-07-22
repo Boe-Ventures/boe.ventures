@@ -12,6 +12,7 @@ import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import { TiltedCards } from '@/components/TiltedCards'
 import logoHomiDark from '@/images/clients/homi/logo-dark.svg'
+import logomarkDraupnir from '@/images/clients/draupnir/logomark-dark.svg'
 import logomarkHomi from '@/images/clients/homi/logomark-light.svg'
 import logomarkPromad from '@/images/clients/promad/logomark-compass-light.svg'
 import logomarkSwipeStats from '@/images/clients/swipestats/logomark-dark.svg'
@@ -25,6 +26,7 @@ import { RootLayout } from '@/components/RootLayout'
 const ventures = [
   { name: 'Homi', logo: logomarkHomi },
   { name: 'SwipeStats', logo: logomarkSwipeStats },
+  { name: 'Draupnir', logo: logomarkDraupnir },
   { name: 'PROMAD', logo: logomarkPromad, outlined: true, spaced: true },
   { name: 'Towers Club', logo: logomarkTowers },
 ]
@@ -50,7 +52,7 @@ function Ventures() {
           <FadeInStagger faster>
             <ul
               role="list"
-              className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+              className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-5"
             >
               {ventures.map((venture) => (
                 <li key={venture.name}>
@@ -101,9 +103,9 @@ function CaseStudies({
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          Homes, dating data, cities to work from — infrequent, high-stakes
-          decisions where existing tools focus on the wrong things. Each
-          product here addresses a version of that same problem.
+          Homes, dating data, cities to work from. Infrequent, high-stakes
+          decisions where existing tools focus on the wrong things. Each product
+          here addresses a version of that same problem.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -176,7 +178,7 @@ function Services() {
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-132 lg:pl-4">
             <ListItem title="AI-powered products">
               Building intelligent applications that understand context and
-              intent — from conversational home search to structured data
+              intent, from conversational home search to structured data
               analysis. AI as a tool, not a gimmick.
             </ListItem>
             <ListItem title="Data platforms">
@@ -190,7 +192,7 @@ function Services() {
               evidence.
             </ListItem>
             <ListItem title="Growth & distribution">
-              Products that grow through genuine value — organic signups,
+              Products that grow through genuine value: organic signups,
               community-driven distribution, and word of mouth over paid
               acquisition.
             </ListItem>
@@ -203,7 +205,7 @@ function Services() {
 
 export const metadata: Metadata = {
   description:
-    'Boe Ventures is the one-person product studio of Kristian Elset Bø. Homi, SwipeStats, Promad, Towers Club — software for high-stakes decisions.',
+    'Boe Ventures is the one-person product studio of Kristian Elset Bø. Homi, SwipeStats, Draupnir, Promad, and Towers Club solve problems worth maintaining.',
 }
 
 export default async function Home() {
@@ -227,7 +229,7 @@ export default async function Home() {
             Software for high-stakes decisions.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Boe Ventures is my one-person product studio. I&apos;m Kristian —
+            Boe Ventures is my one-person product studio. I&apos;m Kristian,
             Norwegian engineer, Oslo and New York. My thesis was on apartment
             matching, and a decade later everything I build is still some
             version of the same problem: finding the right thing in a sea of
@@ -246,7 +248,7 @@ export default async function Home() {
       >
         Homi exists because I watched people make the biggest purchase of their
         lives with fifteen browser tabs and a group chat. Everything I build
-        starts like that — a frustration I couldn&apos;t stop thinking about
+        starts like that: a frustration I couldn&apos;t stop thinking about
         until I&apos;d built the fix.
       </Testimonial>
 

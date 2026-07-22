@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1190 110) rotate(126) scale(760 790)">
+      <stop stop-color="#D5A335" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#D5A335" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="260" y1="120" x2="1320" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24231E"/>
+      <stop offset="1" stop-color="#11110F"/>
+    </linearGradient>
+    <filter id="shadow" x="130" y="36" width="1340" height="844" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="32" stdDeviation="34" flood-color="#000" flood-opacity=".32"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#EEE7D8"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <g opacity=".22" stroke="#8B7340">
+    <path d="M0 100.5h1600M0 200.5h1600M0 300.5h1600M0 400.5h1600M0 500.5h1600M0 600.5h1600M0 700.5h1600M0 800.5h1600"/>
+    <path d="M100.5 0v900M200.5 0v900M300.5 0v900M400.5 0v900M500.5 0v900M600.5 0v900M700.5 0v900M800.5 0v900M900.5 0v900M1000.5 0v900M1100.5 0v900M1200.5 0v900M1300.5 0v900M1400.5 0v900M1500.5 0v900"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="200" y="100" width="1200" height="700" rx="38" fill="url(#panel)"/>
+    <rect x="200.75" y="100.75" width="1198.5" height="698.5" rx="37.25" stroke="#fff" stroke-opacity=".13" stroke-width="1.5"/>
+  </g>
+  <path d="M200 176h1200" stroke="#fff" stroke-opacity=".1"/>
+  <circle cx="242" cy="138" r="7" fill="#fff" fill-opacity=".18"/>
+  <circle cx="269" cy="138" r="7" fill="#fff" fill-opacity=".18"/>
+  <circle cx="296" cy="138" r="7" fill="#DDB24B"/>
+  <text x="1280" y="143" fill="#fff" fill-opacity=".42" font-family="ui-monospace, monospace" font-size="15" letter-spacing="2">SYSTEM READY</text>
+  <text x="280" y="278" fill="#E6BB50" font-family="ui-monospace, monospace" font-size="17" letter-spacing="4">DRAUPNIR FOUNDATION</text>
+  <text x="280" y="350" fill="#fff" font-family="ui-sans-serif, system-ui" font-size="52" font-weight="600" letter-spacing="-2">Forge once.</text>
+  <text x="280" y="412" fill="#fff" font-family="ui-sans-serif, system-ui" font-size="52" font-weight="600" letter-spacing="-2">Launch again.</text>
+  <text x="280" y="474" fill="#fff" fill-opacity=".5" font-family="ui-sans-serif, system-ui" font-size="20">One working product, ready to become yours.</text>
+  <g transform="translate(1080 330)" stroke="#E6BB50" stroke-linecap="round">
+    <circle cx="0" cy="0" r="54" stroke-width="12"/>
+    <circle cx="0" cy="-118" r="18" stroke-width="9"/>
+    <circle cx="83.4" cy="-83.4" r="18" stroke-width="9"/>
+    <circle cx="118" cy="0" r="18" stroke-width="9"/>
+    <circle cx="83.4" cy="83.4" r="18" stroke-width="9"/>
+    <circle cx="0" cy="118" r="18" stroke-width="9"/>
+    <circle cx="-83.4" cy="83.4" r="18" stroke-width="9"/>
+    <circle cx="-118" cy="0" r="18" stroke-width="9"/>
+    <circle cx="-83.4" cy="-83.4" r="18" stroke-width="9"/>
+  </g>
+  <g font-family="ui-monospace, monospace" font-size="15">
+    <rect x="280" y="570" width="245" height="92" rx="15" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".1"/>
+    <circle cx="311" cy="601" r="5" fill="#76D49B"/>
+    <text x="327" y="607" fill="#B8F1CE">AUTH</text>
+    <text x="311" y="638" fill="#fff" fill-opacity=".34">CONNECTED</text>
+    <rect x="545" y="570" width="245" height="92" rx="15" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".1"/>
+    <circle cx="576" cy="601" r="5" fill="#76D49B"/>
+    <text x="592" y="607" fill="#B8F1CE">BILLING</text>
+    <text x="576" y="638" fill="#fff" fill-opacity=".34">CONNECTED</text>
+    <rect x="810" y="570" width="245" height="92" rx="15" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".1"/>
+    <circle cx="841" cy="601" r="5" fill="#76D49B"/>
+    <text x="857" y="607" fill="#B8F1CE">DEPLOY</text>
+    <text x="841" y="638" fill="#fff" fill-opacity=".34">CONNECTED</text>
+  </g>
+</svg>

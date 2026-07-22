@@ -11,6 +11,7 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
 import logoHomi from '@/images/clients/homi/logo-dark.svg'
+import logoDraupnir from '@/images/clients/draupnir/logomark-dark.svg'
 import logoPromad from '@/images/clients/promad/logo-dark.svg'
 import logoSwipeStats from '@/images/clients/swipestats/logo-dark.svg'
 import logoTowers from '@/images/clients/towers/logo-dark.svg'
@@ -96,6 +97,7 @@ function CaseStudies({
 const clients = [
   ['Homi', logoHomi],
   ['SwipeStats', logoSwipeStats],
+  ['Draupnir', logoDraupnir],
   ['Promad', logoPromad],
   ['Towers Club', logoTowers],
 ]
@@ -112,7 +114,7 @@ function Clients() {
         <Border as={FadeIn} />
         <ul
           role="list"
-          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
+          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-5"
         >
           {clients.map(([client, logo]) => (
             <li key={client} className="group">
@@ -132,7 +134,7 @@ function Clients() {
 export const metadata: Metadata = {
   title: 'Work',
   description:
-    'Products built by Boe Ventures — Homi, SwipeStats, and Promad. Each one tackles a real matching or coordination problem.',
+    'Products built by Boe Ventures, including Homi, SwipeStats, and Draupnir. Each case study covers what shipped and what the product taught me.',
 }
 
 export default async function Work() {
@@ -142,9 +144,9 @@ export default async function Work() {
     <RootLayout>
       <PageIntro eyebrow="Portfolio" title="Products shipped and maintained">
         <p>
-          Every one of these started as a personal itch: I couldn&apos;t find
-          an apartment, I wondered what my Tinder data actually said, I kept
-          photographing residential towers. The case studies tell it straight —
+          Every one of these started as a personal itch: I couldn&apos;t find an
+          apartment, I wondered what my Tinder data actually said, I kept
+          photographing residential towers. The case studies tell it straight,
           numbers included.
         </p>
       </PageIntro>
@@ -157,8 +159,8 @@ export default async function Work() {
       >
         SwipeStats was supposed to be a side experiment. It became a profitable
         business, because the signals people think matter in dating and the
-        signals that actually predict outcomes are wildly different — and
-        people will pay to see the difference in their own data.
+        signals that actually predict outcomes are wildly different, and people
+        will pay to see the difference in their own data.
       </Testimonial>
 
       <Clients />
