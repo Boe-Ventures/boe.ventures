@@ -1,4 +1,5 @@
 import { type Metadata } from 'next'
+import Image from 'next/image'
 
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
@@ -56,6 +57,8 @@ function Discover() {
       title="Discover"
       image={{
         src: '/images/archive/product-development-spaceship-car.png',
+        width: 1536,
+        height: 1024,
         grayscale: false,
       }}
     >
@@ -107,6 +110,8 @@ function Build() {
       title="Build"
       image={{
         src: '/images/archive/mvp-learning-instrument.png',
+        width: 1536,
+        height: 1024,
         shape: 1,
         grayscale: false,
       }}
@@ -156,12 +161,160 @@ function Build() {
   )
 }
 
+const atlasRows = [
+  {
+    step: 'Collect',
+    story: 'Save a listing before it disappears',
+    views: ['Share', 'Inbox'],
+  },
+  {
+    step: 'Organize',
+    story: 'Keep the shortlist useful for everyone',
+    views: ['Inbox', 'Collection'],
+  },
+  {
+    step: 'Compare',
+    story: 'See the tradeoffs without reopening ten tabs',
+    views: ['Collection', 'Listing', 'Compare'],
+  },
+  {
+    step: 'Choose',
+    story: 'Make the decision together',
+    views: ['Listing', 'Compare'],
+  },
+]
+
+const atlasViews = ['Share', 'Inbox', 'Collection', 'Listing', 'Compare']
+
+function ProductAtlas() {
+  return (
+    <Container>
+      <FadeIn>
+        <section className="overflow-hidden rounded-4xl bg-neutral-950 text-white">
+          <div className="grid gap-12 px-6 py-12 sm:px-10 sm:py-16 lg:grid-cols-[0.8fr_1.2fr] lg:px-16">
+            <div>
+              <p className="font-display text-sm font-semibold tracking-wide text-blue-300 uppercase">
+                Product Atlas
+              </p>
+              <h2 className="mt-4 font-display text-4xl font-medium tracking-tight sm:text-5xl">
+                Map the job. Then map where the product does it.
+              </h2>
+              <div className="mt-6 space-y-5 text-base leading-7 text-neutral-300">
+                <p>
+                  A feature list loses the thread. I start with the job someone
+                  is trying to get done, break it into concrete stories, then
+                  connect those stories to the screens, routes, data, and
+                  services that make them real.
+                </p>
+                <p>
+                  The result is a product map that a founder, designer, or
+                  coding agent can inspect. It shows what exists, what has been
+                  verified, and where the experience has holes.
+                </p>
+              </div>
+              <div className="mt-8 flex flex-wrap gap-2 text-xs">
+                {[
+                  'Jobs and journeys',
+                  'Screens and views',
+                  'Implementation evidence',
+                  'Marketing surfaces',
+                ].map((label) => (
+                  <span
+                    key={label}
+                    className="rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-neutral-200"
+                  >
+                    {label}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="min-w-0">
+              <p className="mb-3 text-xs font-medium tracking-wide text-neutral-400 uppercase">
+                Homi example: job steps by product view
+              </p>
+              <div className="overflow-x-auto rounded-2xl border border-white/10 bg-white/5 p-3">
+                <div className="grid min-w-[650px] grid-cols-[150px_1fr_repeat(5,54px)] gap-1.5 text-xs">
+                  <div />
+                  <div className="px-2 py-2 text-neutral-500">User story</div>
+                  {atlasViews.map((view) => (
+                    <div
+                      key={view}
+                      className="flex items-end justify-center px-1 py-2 text-center text-[10px] leading-tight text-neutral-400"
+                    >
+                      {view}
+                    </div>
+                  ))}
+                  {atlasRows.flatMap((row) => [
+                    <div
+                      key={`${row.step}-step`}
+                      className="rounded-lg bg-white/8 px-3 py-3 font-semibold text-white"
+                    >
+                      {row.step}
+                    </div>,
+                    <div
+                      key={`${row.step}-story`}
+                      className="rounded-lg bg-white/[0.04] px-3 py-3 leading-5 text-neutral-300"
+                    >
+                      {row.story}
+                    </div>,
+                    ...atlasViews.map((view) => (
+                      <div
+                        key={`${row.step}-${view}`}
+                        className={`flex items-center justify-center rounded-lg ${
+                          row.views.includes(view)
+                            ? 'bg-blue-400 text-neutral-950'
+                            : 'bg-white/[0.03] text-neutral-700'
+                        }`}
+                        aria-label={`${row.step}: ${view} ${
+                          row.views.includes(view)
+                            ? 'supports this story'
+                            : 'does not support this story'
+                        }`}
+                      >
+                        {row.views.includes(view) ? '●' : '·'}
+                      </div>
+                    )),
+                  ])}
+                </div>
+              </div>
+              <p className="mt-3 text-xs leading-5 text-neutral-500">
+                This is an experience inventory, not a replacement for the
+                delivery backlog.
+              </p>
+            </div>
+          </div>
+
+          <div className="border-t border-white/10 bg-white/[0.03] p-4 sm:p-6 lg:px-16 lg:py-8">
+            <div className="overflow-hidden rounded-2xl border border-white/10 bg-white">
+              <Image
+                src="/images/product-atlas/homi-board-2024.png"
+                alt="An early Homi collection board used as a source for the Product Atlas"
+                width={1080}
+                height={595}
+                className="h-auto w-full"
+              />
+            </div>
+            <p className="mt-3 text-xs text-neutral-500">
+              An early Homi product view from 2024. Old screens are useful
+              evidence when the map records what they were and when they were
+              observed.
+            </p>
+          </div>
+        </section>
+      </FadeIn>
+    </Container>
+  )
+}
+
 function Iterate() {
   return (
     <Section
       title="Iterate"
       image={{
         src: '/images/archive/baseline-tune-pivot.png',
+        width: 1536,
+        height: 1024,
         shape: 2,
         grayscale: false,
       }}
@@ -267,7 +420,7 @@ function Values() {
 export const metadata: Metadata = {
   title: 'How I Work',
   description:
-    'Discover, build, iterate. How Boe Ventures approaches product development: evidence-driven, fast-shipping, and focused on real problems.',
+    'How Boe Ventures moves from user stories to product maps, working software, and evidence from real use.',
 }
 
 export default function Process() {
@@ -285,6 +438,7 @@ export default function Process() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Discover />
         <Build />
+        <ProductAtlas />
         <Iterate />
       </div>
 
