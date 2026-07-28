@@ -4,6 +4,7 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
+import { company } from '@/lib/company'
 
 const navigation = [
   {
@@ -111,13 +112,39 @@ export function Footer() {
             <ContactCTA />
           </div>
         </div>
-        <div className="mt-24 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
+        <div className="mt-24 mb-20 flex flex-wrap items-start justify-between gap-x-12 gap-y-8 border-t border-neutral-950/10 pt-12">
           <Link href="/" aria-label="Home">
             <Logo fillOnHover />
           </Link>
-          <p className="text-sm text-neutral-700">
-            © Boe Ventures AS {new Date().getFullYear()}
-          </p>
+          <div className="text-sm leading-6 text-neutral-700 sm:text-right">
+            <p className="font-semibold text-neutral-950">
+              {company.legalName}
+            </p>
+            <p>
+              Org. no.{' '}
+              <a
+                href={company.registryUrl}
+                className="underline decoration-neutral-950/30 underline-offset-4 transition hover:text-neutral-950"
+              >
+                {company.organizationNumber} MVA
+              </a>
+            </p>
+            <address className="not-italic">
+              {company.address.street}, {company.address.postalCode}{' '}
+              {company.address.locality}, {company.address.country}
+            </address>
+            <p>
+              <a
+                href={`mailto:${company.email}`}
+                className="transition hover:text-neutral-950"
+              >
+                {company.email}
+              </a>
+            </p>
+            <p className="mt-2">
+              © {company.displayName} {new Date().getFullYear()}
+            </p>
+          </div>
         </div>
       </FadeIn>
     </Container>
