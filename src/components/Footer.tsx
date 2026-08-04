@@ -13,6 +13,7 @@ const navigation = [
       { title: 'SwipeStats', href: '/work/swipestats' },
       { title: 'Promad', href: '/work/promad' },
       { title: 'Towers Club', href: '/work/towers' },
+      { title: 'Agent Replay', href: '/work/agent-replay' },
       {
         title: (
           <>

@@ -14,6 +14,7 @@ import logoHomi from '@/images/clients/homi/logo-dark.svg'
 import logoPromad from '@/images/clients/promad/logo-dark.svg'
 import logoSwipeStats from '@/images/clients/swipestats/logo-dark.svg'
 import logoTowers from '@/images/clients/towers/logo-dark.svg'
+import logoAgentReplay from '@/images/clients/agent-replay/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
@@ -98,6 +99,7 @@ const clients = [
   ['SwipeStats', logoSwipeStats],
   ['Promad', logoPromad],
   ['Towers Club', logoTowers],
+  ['Agent Replay', logoAgentReplay],
 ]
 
 function Clients() {
@@ -112,7 +114,7 @@ function Clients() {
         <Border as={FadeIn} />
         <ul
           role="list"
-          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
+          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-5"
         >
           {clients.map(([client, logo]) => (
             <li key={client} className="group">
@@ -132,7 +134,7 @@ function Clients() {
 export const metadata: Metadata = {
   title: 'Work',
   description:
-    'Products built by Boe Ventures — Homi, SwipeStats, and Promad. Each one tackles a real matching or coordination problem.',
+    'Products built by Boe Ventures — including Homi, SwipeStats, and the open-source Agent Replay developer tool.',
 }
 
 export default async function Work() {

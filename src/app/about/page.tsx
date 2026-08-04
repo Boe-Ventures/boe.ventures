@@ -120,8 +120,9 @@ export default async function About() {
           <p>
             SwipeStats gives dating app users a data lens on their own behavior.
             Homi applies AI to home search — another market where signal is buried
-            under noise. Promad.life is next: a community for professional nomads
-            who've made remote work a lifestyle, not a perk.
+            under noise. Agent Replay is the open-source developer-tool branch of
+            the portfolio: a local flight recorder for AI-assisted web development.
+            Promad.life is the community branch for professional nomads.
           </p>
           <p>
             I'm a member of Nova Talent, have facilitated at Stanford's STeLA Forum,
@@ -132,7 +133,7 @@ export default async function About() {
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="3" label="Products in portfolio" />
+          <StatListItem value="5" label="Products in portfolio" />
           <StatListItem value="2" label="Countries operating from" />
           <StatListItem value="∞" label="Matching problems left to solve" />
         </StatList>

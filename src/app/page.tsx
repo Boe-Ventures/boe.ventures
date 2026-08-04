@@ -16,6 +16,7 @@ import logomarkHomi from '@/images/clients/homi/logomark-light.svg'
 import logomarkPromad from '@/images/clients/promad/logomark-compass-light.svg'
 import logomarkSwipeStats from '@/images/clients/swipestats/logomark-dark.svg'
 import logomarkTowers from '@/images/clients/towers/logomark-dark.svg'
+import logomarkAgentReplay from '@/images/clients/agent-replay/logomark-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
@@ -27,6 +28,7 @@ const ventures = [
   { name: 'SwipeStats', logo: logomarkSwipeStats },
   { name: 'PROMAD', logo: logomarkPromad, outlined: true, spaced: true },
   { name: 'Towers Club', logo: logomarkTowers },
+  { name: 'Agent Replay', logo: logomarkAgentReplay },
 ]
 
 function Ventures() {
@@ -50,7 +52,7 @@ function Ventures() {
           <FadeInStagger faster>
             <ul
               role="list"
-              className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+              className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-5"
             >
               {ventures.map((venture) => (
                 <li key={venture.name}>
@@ -97,17 +99,17 @@ function CaseStudies({
   return (
     <>
       <SectionIntro
-        title="The same underlying problem, across every product"
+        title="Products that turn noisy systems into useful evidence"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          Homes, dating data, cities to work from — infrequent, high-stakes
-          decisions where existing tools focus on the wrong things. Each
-          product here addresses a version of that same problem.
+          Homes, dating data, cities to work from, and browsers being debugged
+          by agents — different surfaces, but the same instinct: preserve the
+          signal, make it legible, and let people act on evidence.
         </p>
       </SectionIntro>
       <Container className="mt-16">
-        <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <FadeInStagger className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {caseStudies.map((caseStudy) => (
             <FadeIn key={caseStudy.href} className="flex">
               <article className="relative flex w-full flex-col rounded-[20px] border border-neutral-950/10 bg-white p-6 shadow-[0_18px_50px_rgba(15,15,16,0.06),0_2px_8px_rgba(15,15,16,0.03)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(15,15,16,0.1),0_2px_8px_rgba(15,15,16,0.04)] sm:p-8">
@@ -203,11 +205,11 @@ function Services() {
 
 export const metadata: Metadata = {
   description:
-    'Boe Ventures is the one-person product studio of Kristian Elset Bø. Homi, SwipeStats, Promad, Towers Club — software for high-stakes decisions.',
+    'Boe Ventures is the one-person product studio of Kristian Elset Bø — consumer products, data tools, and open-source developer software.',
 }
 
 export default async function Home() {
-  let caseStudies = (await loadCaseStudies()).slice(0, 3)
+  let caseStudies = (await loadCaseStudies()).slice(0, 4)
 
   return (
     <RootLayout>
