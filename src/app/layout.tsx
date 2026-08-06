@@ -1,4 +1,5 @@
 import { type Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/next'
 
 import { company } from '@/lib/company'
 
@@ -50,6 +51,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           }}
         />
         {children}
+        <Analytics />
       </body>
     </html>
   )
