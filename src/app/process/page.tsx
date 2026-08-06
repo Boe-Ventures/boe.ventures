@@ -68,8 +68,8 @@ function Discover() {
           mapping the{' '}
           <strong className="font-semibold text-neutral-950">
             existing landscape
-          </strong>{' '}
-          — who has this problem, how are they solving it today, and where are
+          </strong>
+          : who has this problem, how are they solving it today, and where are
           the biggest gaps.
         </p>
         <p>
@@ -82,7 +82,7 @@ function Discover() {
         </p>
         <p>
           The goal is to turn the vision into testable assumptions: a sharp
-          problem statement and a clear hypothesis. Not a business plan — a{' '}
+          problem statement and a clear hypothesis. Not a business plan. A{' '}
           <strong className="font-semibold text-neutral-950">bet</strong>.
           Product development should feel more like driving a car and making
           small corrections than launching a spaceship on a fixed trajectory.
@@ -122,9 +122,9 @@ function Build() {
           <strong className="font-semibold text-neutral-950">
             Next.js, TypeScript, tRPC, Postgres
           </strong>
-          . Same stack across every product. This isn&apos;t laziness —
-          it&apos;s leverage. Familiarity lets me ship fast without accumulating
-          hidden complexity.
+          . Same stack across every product. This isn&apos;t laziness; it&apos;s
+          leverage. Familiarity lets me ship fast without accumulating hidden
+          complexity.
         </p>
         <p>
           The first version is a working{' '}
@@ -137,8 +137,8 @@ function Build() {
         </p>
         <p>
           AI is now a first-class collaborator in every build. I use it for code
-          generation, UX copy, data processing, and feature brainstorming — not
-          as a shortcut, but as a{' '}
+          generation, UX copy, data processing, and feature brainstorming. It
+          isn&apos;t a shortcut, but a{' '}
           <strong className="font-semibold text-neutral-950">
             force multiplier
           </strong>{' '}
@@ -322,7 +322,7 @@ function Iterate() {
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Launching is the beginning, not the end. After an initial release I
-          watch how people actually use the product — not how I imagined they
+          watch how people actually use the product, not how I imagined they
           would. Usage patterns, drop-off points, and support messages are{' '}
           <strong className="font-semibold text-neutral-950">data</strong>.
           Opinions are cheap.
@@ -334,7 +334,7 @@ function Iterate() {
         </p>
         <p>
           Iteration also applies to the portfolio itself. I&apos;m not attached
-          to any particular product — I&apos;m attached to building things that
+          to any particular product. I&apos;m attached to building things that
           matter. If the evidence says{' '}
           <strong className="font-semibold text-neutral-950">pivot</strong>, I
           pivot.
@@ -394,13 +394,13 @@ function Values() {
           </GridListItem>
           <GridListItem title="Compounding bets">
             The products I build share underlying infrastructure and insights.
-            Work done on one informs the others. That&apos;s not accident —
+            Work done on one informs the others. That&apos;s not an accident.
             it&apos;s strategy.
           </GridListItem>
           <GridListItem title="Remote by default">
             I&apos;ve worked from Oslo, New York, and places in between. The
-            best way to stay sharp is to stay curious — and that requires
-            freedom of location.
+            best way to stay sharp is to stay curious. That requires freedom of
+            location.
           </GridListItem>
           <GridListItem title="Ship, then polish">
             Perfect is the enemy of shipped. A rough product in front of real
@@ -408,7 +408,7 @@ function Values() {
           </GridListItem>
           <GridListItem title="Own the problem">
             I build in domains where I have genuine conviction. Dating data,
-            home search, professional mobility — these aren&apos;t random bets.
+            home search, and professional mobility aren&apos;t random bets.
             They&apos;re problems I&apos;ve lived.
           </GridListItem>
         </GridList>
@@ -430,7 +430,7 @@ export default function Process() {
         <p>
           No 12-week discovery phases. No committee-approved roadmaps. I move
           fast, stay close to users, and let evidence drive decisions. It&apos;s
-          the same core loop I taught in Lean Startup talks in 2016–2018,
+          the same core loop I taught in Lean Startup talks in 2016 to 2018,
           updated for how I build today.
         </p>
       </PageIntro>

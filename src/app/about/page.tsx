@@ -17,7 +17,7 @@ import { RootLayout } from '@/components/RootLayout'
 
 function Approach() {
   return (
-    <div className="mx-auto mt-24 max-w-7xl rounded-4xl bg-neutral-950 py-24 px-6 sm:mt-32 lg:mt-40 lg:px-8 lg:py-32">
+    <div className="mx-auto mt-24 max-w-7xl rounded-4xl bg-neutral-950 px-6 py-24 sm:mt-32 lg:mt-40 lg:px-8 lg:py-32">
       <SectionIntro
         eyebrow="How I work"
         title="Ship fast. Learn from real users. Iterate."
@@ -40,8 +40,8 @@ function Approach() {
           </GridListItem>
           <GridListItem title="Compounding bets" invert>
             Every product I build teaches me something that makes the next one
-            sharper. Matching problems are my through-line — I just keep
-            applying them to better contexts.
+            sharper. Matching problems are my through-line. I just keep applying
+            them to better contexts.
           </GridListItem>
         </GridList>
       </Container>
@@ -82,7 +82,7 @@ function Founder() {
             </p>
             <p className="mt-6 max-w-lg text-xl text-neutral-600">
               &ldquo;Everything I build is still some version of the same
-              problem — finding the right thing in a sea of options with bad
+              problem: finding the right thing in a sea of options with bad
               signal.&rdquo;
             </p>
             <SocialMedia className="mt-8" />
@@ -96,7 +96,7 @@ function Founder() {
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Boe Ventures is the product holding company of Kristian Elset Bøe — a Norwegian engineer building software that solves matching and coordination problems.',
+    'Boe Ventures is the product holding company of Kristian Elset Bøe, a Norwegian engineer building software that solves matching and coordination problems.',
 }
 
 export default async function About() {
@@ -106,27 +106,29 @@ export default async function About() {
     <RootLayout>
       <PageIntro eyebrow="About" title="One-person product studio">
         <p>
-          Boe Ventures is my holding company. I'm Kristian — Norwegian engineer,
-          Oslo and NYC, MSc in AI from NTNU. I build software products and run them.
+          Boe Ventures is my holding company. I'm Kristian, a Norwegian engineer
+          based between Oslo and NYC, with an MSc in AI from NTNU. I build
+          software products and run them.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            My thesis was on apartment matching algorithms. Then I spent years at
-            Netlight and Schibsted, then did a stint at Antler where I worked on
-            workplace matchmaking at Scales. The pattern kept showing up: people
-            trying to find the right thing in a sea of options, with bad tools to
-            help them. So I started building better ones.
+            My thesis was on apartment matching algorithms. Then I spent years
+            at Netlight and Schibsted, then did a stint at Antler where I worked
+            on workplace matchmaking at Scales. The pattern kept showing up:
+            people trying to find the right thing in a sea of options, with bad
+            tools to help them. So I started building better ones.
           </p>
           <p>
             SwipeStats gives dating app users a data lens on their own behavior.
-            Homi applies AI to home search — another market where signal is buried
-            under noise. Promad.life is next: a community for professional nomads
+            Homi applies AI to home search, where signal is also buried under
+            noise. Promad.life is next: a community for professional nomads
             who've made remote work a lifestyle, not a perk.
           </p>
           <p>
-            I'm a member of Nova Talent, have facilitated at Stanford's STeLA Forum,
-            and was Project Manager for Norwegian Game Awards at Start NTNU. Full-stack
-            in practice: Next.js, TypeScript, tRPC, ML when the problem warrants it.
+            I'm a member of Nova Talent, have facilitated at Stanford's STeLA
+            Forum, and was Project Manager for Norwegian Game Awards at Start
+            NTNU. Full-stack in practice: Next.js, TypeScript, tRPC, ML when the
+            problem warrants it.
           </p>
         </div>
       </PageIntro>

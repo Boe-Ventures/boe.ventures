@@ -20,8 +20,8 @@ export default function Contact() {
     <RootLayout>
       <PageIntro eyebrow="Contact" title="Let's talk">
         <p>
-          About one of the products, a collaboration, or a matching problem you
-          think I&apos;d appreciate — I read every email.
+          Email me about one of the products, a collaboration, or a matching
+          problem you think I&apos;d appreciate. I read every message.
         </p>
       </PageIntro>
 
@@ -31,8 +31,8 @@ export default function Contact() {
             Email me
           </h2>
           <p className="mt-6 text-base text-neutral-600">
-            The most reliable way to reach me — I reply to everything, usually
-            within a day or two.
+            Email is the most reliable way to reach me. I reply to everything,
+            usually within a day or two.
           </p>
           <p className="mt-6">
             <Link

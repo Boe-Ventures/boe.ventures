@@ -23,7 +23,7 @@ The thing that actually decides whether a home is right for you is a story. _"Yo
 
 ## The story is the product
 
-The core primitive in Homi is what I call the _story_ — a plaintext narrative generated from a short voice or chat interview with the searcher. It captures who they are, what they’re hoping to achieve, and what actually matters to them emotionally. Not criteria. Context.
+The core primitive in Homi is what I call the _story_: a plaintext narrative generated from a short voice or chat interview with the searcher. It captures who they are, what they’re hoping to achieve, and what actually matters to them emotionally. Not criteria. Context.
 
 Every AI action in the system reads from that story. When an agent reviews a listing, it scores against the story, not against generic quality. When the browser scout goes looking for listings on Finn or Hemnet or Rightmove, it reads the story to decide what to look for. When a partner adds a note to the collection, the note gets folded back into the story.
 
@@ -40,7 +40,7 @@ Every AI action in the system reads from that story. When an agent reviews a lis
 Three things I didn’t expect:
 
 1. **People write longer stories than I asked for.** The average first-session story is about twice as long as my prompts suggest. Once someone starts describing what they actually want from a home, it turns out they have a lot to say, and no one has ever really asked.
-2. **Multi-person collections are messy in interesting ways.** Two people looking together almost always have stories that partially contradict each other. Surfacing those contradictions — gently — has become one of the more valuable things the product does.
+2. **Multi-person collections are messy in interesting ways.** Two people looking together almost always have stories that partially contradict each other. Gently surfacing those contradictions has become one of the more valuable things the product does.
 3. **The story evolves.** Thumbs-ups, thumbs-downs, and stage movements (incoming → qualified → will-view) update the story over time. By the time someone is ready to make an offer, their story barely resembles the one they started with. That’s not a bug. That’s the search working.
 
 ## The stack
@@ -49,6 +49,6 @@ Nothing exotic. Next.js for the web app, Drizzle + Neon for the database, tRPC f
 
 ## Where it’s going
 
-I'm at a few hundred signups so far, with broker pilots running in Oslo and a handful of international users testing short-stay mode. The next wave is saved searches — stories that keep scouting in the background and ping you when something new matches. The one after that is a chrome extension that lets you forward any listing to Homi from any site with a keystroke.
+I'm at a few hundred signups so far, with broker pilots running in Oslo and a handful of international users testing short-stay mode. The next wave is saved searches: stories that keep scouting in the background and ping you when something new matches. The one after that is a chrome extension that lets you forward any listing to Homi from any site with a keystroke.
 
 If any of this sounds useful for your own search, [homi.so](https://homi.so) is live.

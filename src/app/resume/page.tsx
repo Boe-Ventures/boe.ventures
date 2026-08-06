@@ -20,7 +20,7 @@ const career: CareerEntry[] = [
   {
     role: 'Founder',
     company: 'Homi',
-    period: 'Oct 2025 – Present',
+    period: 'Oct 2025 to Present',
     location: 'Oslo',
     description:
       'Building a collaborative home search tool that replaces messy group chats and spreadsheets with one shared workspace.',
@@ -28,7 +28,7 @@ const career: CareerEntry[] = [
   {
     role: 'Founding Engineer',
     company: 'Wordware (YC S24)',
-    period: 'Aug 2024 – Jul 2025',
+    period: 'Aug 2024 to Jul 2025',
     location: 'San Francisco',
     description:
       'Helped design and scale the product and infrastructure through a $30M seed round. Built parts of the typed multimodal runtime powering structured AI workflows, and supported company-wide SOC 2 Type I & II compliance.',
@@ -36,14 +36,14 @@ const career: CareerEntry[] = [
   {
     role: 'Lead Engineer',
     company: 'Matcha',
-    period: 'Mar 2023 – May 2024',
+    period: 'Mar 2023 to May 2024',
     description:
       'A platform for professionals and communities investing in growing their network in a focused way.',
   },
   {
     role: 'Senior Software Engineer → Dev Team Lead → Engineering Manager',
     company: 'Holaplex',
-    period: 'Nov 2021 – Jan 2023',
+    period: 'Nov 2021 to Jan 2023',
     location: 'Remote',
     description:
       'Grew from IC into managing the engineering team over 15 months, working on distributed systems and Solana-based infrastructure.',
@@ -51,7 +51,7 @@ const career: CareerEntry[] = [
   {
     role: 'Co-Founder & CTO (Acquired)',
     company: 'Scales',
-    period: 'Mar 2020 – May 2022',
+    period: 'Mar 2020 to May 2022',
     location: 'Palo Alto',
     description:
       'Enterprise software for designing and automating employee engagement programs. Connected 1,000+ people worldwide across 3,000+ program interactions during private beta.',
@@ -59,15 +59,15 @@ const career: CareerEntry[] = [
   {
     role: 'Product Lead',
     company: 'Husleie.no',
-    period: 'Jul 2019 – Feb 2020',
+    period: 'Jul 2019 to Feb 2020',
     location: 'Oslo',
     description:
-      'Digitising the landlord–tenant relationship. Led process and requirements across the org.',
+      'Digitising the landlord-tenant relationship. Led process and requirements across the org.',
   },
   {
     role: 'Consultant',
     company: 'Netlight',
-    period: 'Sep 2018 – Jul 2019',
+    period: 'Sep 2018 to Jul 2019',
     location: 'Oslo / Berlin',
     description:
       'Client work at VG/Schibsted (partner integration API, recommendation system, GDPR-compliant consent handling) and at Klarna Bank in Berlin, preparing the merchant onboarding flow for its US launch.',
@@ -101,14 +101,14 @@ const education = [
   {
     title: 'MSc in Computer Science & Artificial Intelligence',
     place: 'Norwegian University of Science and Technology (NTNU), Trondheim',
-    period: '2013 – 2018',
+    period: '2013 to 2018',
     description:
       'Specialization in artificial intelligence and recommendation systems. Thesis on AI-based apartment matching.',
   },
   {
     title: 'Study Abroad / Exchange',
     place: 'University of Melbourne, Australia',
-    period: '2015 – 2016',
+    period: '2015 to 2016',
     description: 'One year abroad as part of the NTNU degree.',
   },
 ]
@@ -124,7 +124,7 @@ export default function Resume() {
     <RootLayout>
       <PageIntro eyebrow="Resume" title="Career history">
         <p>
-          Technical background, career history, and education — the long
+          Technical background, career history, and education. This is the long
           version of the About page.
         </p>
       </PageIntro>
